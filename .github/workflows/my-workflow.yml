@@ -40,7 +40,7 @@ jobs:
           else
               echo "No workspaces to install. Running 'yarn install' in the root directory."
               yarn cache clean 
-              yarn add @componly/cli
+              yarn add @componly/cli@2.0.1
               yarn add axios
           fi
 
