@@ -39,7 +39,8 @@
     "@storybook/react": "7.0.26",
     "@storybook/testing-library": "0.0.14-next.2",
     "eslint-plugin-storybook": "^0.6.12",
-    "storybook": "7.0.26"
+    "storybook": "^7.0.26",
+    "axios": "^1.4.0"
   },
   "resolutions": {
     "@componly/core": "2.0.1",
