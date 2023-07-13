@@ -34,12 +34,16 @@ jobs:
               pwd
               pushd ${{ matrix.workspaces }}
               yarn cache clean 
-              yarn add @componly/cli
+              yarn add @componly/core@2.0.1
+              yarn add @componly/schemas@2.0.1
+              yarn add @componly/cli@2.0.1
               yarn add axios
               popd
           else
               echo "No workspaces to install. Running 'yarn install' in the root directory."
               yarn cache clean 
+              yarn add @componly/core@2.0.1
+              yarn add @componly/schemas@2.0.1
               yarn add @componly/cli@2.0.1
               yarn add axios
           fi
